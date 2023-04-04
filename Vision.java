@@ -2,22 +2,16 @@ package org.firstinspires.ftc.teamcode;
 //Package is a VERY important step! Required to do basically anything with the robot
 
 import android.annotation.SuppressLint;
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
 
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
-import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
 import org.openftc.apriltag.AprilTagDetection;
 import org.openftc.easyopencv.OpenCvCamera;
 import org.openftc.easyopencv.OpenCvCameraRotation;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 //Most imports are automatically handled by Android Studio as you program
 
 public class Vision extends Subsystem {
