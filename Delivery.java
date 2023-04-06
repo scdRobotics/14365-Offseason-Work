@@ -12,7 +12,7 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 
 public class Delivery extends Subsystem {
     private final DcMotorEx slide;
-    private final Servo gripper;
+    public final Servo gripper;
 
     //"Constructor" object for Delivery
     public Delivery(DcMotorEx slide, Servo gripper, Telemetry telemetry, HardwareMap hardwareMap, ElapsedTime timer){

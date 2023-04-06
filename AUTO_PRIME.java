@@ -22,7 +22,7 @@ public class AUTO_PRIME extends LinearOpMode {
 
         robot.vision.activateAprilTagYellowPipelineCamera2();
 
-        robot.delivery.closeGripper();
+        //robot.delivery.closeGripper();
 
         robot.sensors.deployOdo();
 
