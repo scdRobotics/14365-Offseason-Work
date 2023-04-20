@@ -126,19 +126,19 @@ public class Robot {
 
 
         //Map Delivery System
-        slide=hardwareMap.get(DcMotorEx.class,"slide");
-        gripper=hardwareMap.get(Servo.class,"gripper");
+        //slide=hardwareMap.get(DcMotorEx.class,"slide");
+        //gripper=hardwareMap.get(Servo.class,"gripper");
 
-        slide.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        //slide.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         //Map Sensor System
-        front = hardwareMap.get(DistanceSensor.class, "front");
+        //front = hardwareMap.get(DistanceSensor.class, "front");
         /*leftFront = hardwareMap.get(DistanceSensor.class, "leftFront");
         rightFront = hardwareMap.get(DistanceSensor.class, "rightFront");
         leftBack = hardwareMap.get(DistanceSensor.class, "leftBack");
         rightBack = hardwareMap.get(DistanceSensor.class, "rightBack");*/
 
-        led = hardwareMap.get(RevBlinkinLedDriver.class, "led");
+        //led = hardwareMap.get(RevBlinkinLedDriver.class, "led");
 
 
 
@@ -151,8 +151,8 @@ public class Robot {
                         OpenCvCameraFactory.ViewportSplitMethod.HORIZONTALLY); //Whether to split the container vertically or horizontally
 
         //Map Vision System
-        webcam1 = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamName.class, "Webcam 1"), viewportContainerIds[0]);
-        webcam2 = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamName.class, "Webcam 2"), viewportContainerIds[1]);
+        //webcam1 = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamName.class, "Webcam 1"), viewportContainerIds[0]);
+        //webcam2 = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamName.class, "Webcam 2"), viewportContainerIds[1]);
 
         //FtcDashboard.getInstance().startCameraStream(webcam1, 0);
         //TODO: Needs testing, but will be very helpful!
@@ -167,11 +167,11 @@ public class Robot {
         BNO055IMUUtil.remapZAxis(imu, AxisDirection.NEG_X);
 
 
-
+        /*
         backOdo = hardwareMap.get(Servo.class, "backOdo");
         leftOdo = hardwareMap.get(Servo.class, "leftOdo");
         rightOdo = hardwareMap.get(Servo.class, "rightOdo");
-
+        */
 
 
         /*imu = hardwareMap.get(BNO055IMU.class, "imu");
@@ -182,11 +182,11 @@ public class Robot {
 
 
         //delivery = new Delivery(slide, lazySusan, gripper, telemetry, hardwareMap, timer);
-        delivery = new Delivery(slide, gripper, telemetry, hardwareMap, timer);
+        //delivery = new Delivery(slide, gripper, telemetry, hardwareMap, timer);
 
-        vision = new Vision(webcam1, webcam2, telemetry, hardwareMap, timer);
+        //vision = new Vision(webcam1, webcam2, telemetry, hardwareMap, timer);
 
-        sensors = new Sensors(imu, front, led, backOdo, leftOdo, rightOdo, telemetry, hardwareMap, timer);
+        //sensors = new Sensors(imu, front, led, backOdo, leftOdo, rightOdo, telemetry, hardwareMap, timer);
 
 
 

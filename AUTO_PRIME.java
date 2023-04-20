@@ -16,17 +16,17 @@ public class AUTO_PRIME extends LinearOpMode {
         ElapsedTime timer = new ElapsedTime();
         this.robot = new Robot(this, hardwareMap, telemetry, timer, false);
 
-        robot.delivery.initEncoders();
+        //robot.delivery.initEncoders();
 
-        robot.vision.activateYellowPipelineCamera1();
+        //robot.vision.activateYellowPipelineCamera1();
 
-        robot.vision.activateAprilTagYellowPipelineCamera2();
+        //robot.vision.activateAprilTagYellowPipelineCamera2();
 
         //robot.delivery.closeGripper();
 
-        robot.sensors.deployOdo();
+        //robot.sensors.deployOdo();
 
-        robot.sensors.setLEDState(Sensors.LED_STATE.DEFAULT);
+        //robot.sensors.setLEDState(Sensors.LED_STATE.DEFAULT);
 
     }
     
