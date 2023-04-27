@@ -305,15 +305,17 @@ public class SampleMecanumDrive extends MecanumDrive {
         rightFront.setPower(v3);
     }
 
+
     @Override
     public double getRawExternalHeading() {
-        return imu.getAngularOrientation().firstAngle;
-        //return 0;
+        //return imu.getAngularOrientation().firstAngle;
+        return 0;
     }
 
     @Override
     public Double getExternalHeadingVelocity() {
-        return (double) imu.getAngularVelocity().zRotationRate;
+        //return (double) imu.getAngularVelocity().zRotationRate;
+        return 0.0;
     }
 
     public static TrajectoryVelocityConstraint getVelocityConstraint(double maxVel, double maxAngularVel, double trackWidth) {

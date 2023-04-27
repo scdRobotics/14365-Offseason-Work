@@ -15,14 +15,16 @@ public class _SimpleSquare extends AUTO_PRIME {
 
         initAuto();
 
+        robot.pause(3);
+
         Pose2d penis = new Pose2d(0, 0, (Math.toRadians(0)));
         robot.drive.setPoseEstimate(penis);
 
         TrajectorySequence balls = robot.drive.trajectorySequenceBuilder(penis)
                 .splineToConstantHeading(new Vector2d(20, 0),Math.toRadians(0))
-                .splineToLinearHeading(new Pose2d(20, 20,Math.toRadians(180)),Math.toRadians(180))
-                .splineToLinearHeading(new Pose2d(0, 20),Math.toRadians((180)))
-                .splineToLinearHeading(new Pose2d(0,0),Math.toRadians(180))
+                .splineToLinearHeading(new Pose2d(20, 20,Math.toRadians(0)),Math.toRadians(0))
+                .splineToLinearHeading(new Pose2d(0, 20),Math.toRadians((0)))
+                .splineToLinearHeading(new Pose2d(0,0),Math.toRadians(0))
                 .build();
 
         /*TrajectorySequence boobies = robot.drive.trajectorySequenceBuilder(balls.end())

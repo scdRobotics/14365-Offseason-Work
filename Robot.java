@@ -159,13 +159,13 @@ public class Robot {
         FtcDashboard.getInstance().startCameraStream(webcam2, 0);
 
 
-
+        /*
         imu = hardwareMap.get(BNO055IMU.class, "imu");
         BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
         parameters.angleUnit = BNO055IMU.AngleUnit.RADIANS;
         imu.initialize(parameters);
         BNO055IMUUtil.remapZAxis(imu, AxisDirection.NEG_X);
-
+        */
 
         /*
         backOdo = hardwareMap.get(Servo.class, "backOdo");
