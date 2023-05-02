@@ -21,10 +21,10 @@ public class _SimpleSquare extends AUTO_PRIME {
         robot.drive.setPoseEstimate(penis);
 
         TrajectorySequence balls = robot.drive.trajectorySequenceBuilder(penis)
+//                .lineTo(new Vector2d(0, 20))
                 .splineToConstantHeading(new Vector2d(20, 0),Math.toRadians(0))
-                .splineToLinearHeading(new Pose2d(20, 20,Math.toRadians(0)),Math.toRadians(0))
-                .splineToLinearHeading(new Pose2d(0, 20),Math.toRadians((0)))
-                .splineToLinearHeading(new Pose2d(0,0),Math.toRadians(0))
+                //.splineToLinearHeading(new Pose2d(0, 20),Math.toRadians((0)))
+                //.splineToLinearHeading(new Pose2d(0,0),Math.toRadians(0))
                 .build();
 
         /*TrajectorySequence boobies = robot.drive.trajectorySequenceBuilder(balls.end())
