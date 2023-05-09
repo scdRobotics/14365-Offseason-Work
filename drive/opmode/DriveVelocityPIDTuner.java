@@ -51,7 +51,7 @@ import java.util.List;
 @Config //Flag for FTC Dashboard
 @Autonomous(group = "drive")
 public class DriveVelocityPIDTuner extends LinearOpMode {
-    public static double DISTANCE = 72; // in
+    public static double DISTANCE = 20; // in
 
     enum Mode {
         DRIVER_MODE,

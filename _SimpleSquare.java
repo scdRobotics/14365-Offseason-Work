@@ -21,8 +21,10 @@ public class _SimpleSquare extends AUTO_PRIME {
         robot.drive.setPoseEstimate(penis);
 
         TrajectorySequence balls = robot.drive.trajectorySequenceBuilder(penis)
-                .lineTo(new Vector2d(0, 20))
-                .lineTo(new Vector2d(20, 20))
+                .lineTo(new Vector2d(0, 60))
+                .waitSeconds(3)
+                .lineTo(new Vector2d(0,-60))
+                //.lineTo(new Vector2d(20, 0))
                 .build();
 
 
