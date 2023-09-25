@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import org.firstinspires.ftc.teamcode.trajectorysequence.TrajectorySequence;
 
 @Autonomous(name="bingus", group="Autonomous")
-public class bingus extends AUTO_PRIME {
+public class    bingus extends AUTO_PRIME {
 
     @Override
     public void runOpMode() throws InterruptedException{
@@ -33,9 +33,8 @@ public class bingus extends AUTO_PRIME {
         TrajectorySequence bussy = robot.drive.trajectorySequenceBuilder(harambe.end())
                 .splineToConstantHeading(new Vector2d(-24,12),Math.toRadians(robot.drive.getPoseEstimate().getHeading()))
                 .build();
-
-
-
+        //TrajectorySequence something = robot.drive.trajectorySequenceBuilder(bussy.end())
+                //.splineToLinearHeading(new Vector2d(36, 36),Math.toRadians(180);
 
         waitForStart();
 
@@ -45,7 +44,7 @@ public class bingus extends AUTO_PRIME {
         robot.delivery.slideControl(robot.delivery.slideIdxToEncoderVal(2), 0.5);
         robot.drive.followTrajectorySequence(bussy);
         robot.delivery.openGripper();
-
+        //robot.drive.followTrajectorySequence(something);
 
 
     }

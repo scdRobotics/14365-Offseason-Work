@@ -15,12 +15,11 @@ public class _SimpleSquare extends AUTO_PRIME {
 
         initAuto();
 
-        robot.pause(3);
 
-        Pose2d penis = new Pose2d(0, 0, (Math.toRadians(0)));
-        robot.drive.setPoseEstimate(penis);
+        Pose2d parts = new Pose2d(0, 0, (Math.toRadians(0)));
+        robot.drive.setPoseEstimate(parts);
 
-        TrajectorySequence balls = robot.drive.trajectorySequenceBuilder(penis)
+        TrajectorySequence services = robot.drive.trajectorySequenceBuilder(parts)
                 .lineTo(new Vector2d(0, 60))
                 .waitSeconds(3)
                 .lineTo(new Vector2d(0,-60))
@@ -30,7 +29,7 @@ public class _SimpleSquare extends AUTO_PRIME {
 
         waitForStart();
 
-        robot.drive.followTrajectorySequence(balls);
+        robot.drive.followTrajectorySequence(services);
 
 
     }

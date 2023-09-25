@@ -2,6 +2,8 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 
+import org.firstinspires.ftc.teamcode.AUTO_PRIME;
+
 @Autonomous(name="_AUTO_TEMPLATE", group="Autonomous")
 public class _AUTO_TEMPLATE extends AUTO_PRIME {
 
